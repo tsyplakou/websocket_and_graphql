@@ -1,6 +1,7 @@
 import asyncio
 import websockets
 
+
 async def chat_client():
     uri = "ws://localhost:8000/ws"  # Адрес WebSocket-сервера
     async with websockets.connect(uri) as websocket:
